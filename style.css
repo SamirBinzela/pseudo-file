@@ -1,0 +1,120 @@
+body{
+    font:20px/25px arial;
+    padding: 20px 0 0 20px
+}
+h1{
+    font-size:26px;
+    margin-bottom: 35px;
+}
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: red;
+
+}
+#list li:last-child{
+    color: blue;
+}
+
+li:nth-child(3){
+    color: brown;
+}
+  
+li:nth-of-type(2){
+    color: cyan;
+}
+
+p:only-child{
+    color: darkmagenta;
+}
+
+p:first-of-type{
+    color: darkorange;
+}
+
+div:empty{
+    border:3px solid red;
+}
+
+ul a:link{
+color: lawngreen;
+}
+
+ul a:hover{
+    color: lightgreen;
+}
+
+h1:hover{
+    color: lightseagreen;
+}
+
+ul a:visited{
+    color: maroon;
+}
+
+ul a:active{
+    color: pink;
+}
+p:target{
+    background: gold;
+}
+
+input[type='radio']:checked + label{
+    box-shadow: 0 0 0 1px red;
+}
+input:enabled{
+    border: 2px solid blue;
+}
+
+input:in-range{
+    border: 2px solid green;
+    background: wheat;
+}
+
+input:out-of-range{
+    border: 1px solid green;
+    background: pink;
+}
+
+input:invalid{
+    border: 1px solid green;
+    background: pink;
+}
+
+input:valid{
+    border: 1px solid green;
+    background: gray;
+}
+input:default + label{
+    color:  red;
+}
+
+option:default{
+    color: red;
+}
+
+:root{
+    --maincolor :blue
+}
+h1{
+    color: var(--maincolor);
+}
+
+p::first-line{
+    color: forestgreen;
+    font: size 30px; 
+    font-weight: bold;
+    background: wheat;
+}
+
+p::selection{
+    background: red;
+    color: wheat;
+}
+
+::placeholder{
+    color: red;
+    font-size: 20px;
+}
